@@ -1,49 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance System</title>
+    <title>Attendance Login</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #001f3f; /* لون خلفية كحلي */
-            color: white; /* لون النص */
-            text-align: center; /* محاذاة النص للوسط */
-        }
-        .buttons {
-            display: flex;
-            justify-content: center; /* محاذاة الأزرار في المنتصف */
-            gap: 10px; /* فراغ بين الأزرار */
-            margin-top: 20px; /* فراغ فوق الأزرار */
-        }
-        button {
-            font-size: 16px;
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: #007bff; /* لون خلفية الأزرار */
-            color: white; /* لون نص الأزرار */
-            border: none; /* إزالة الحدود */
-            border-radius: 5px; /* زوايا دائرية */
-            transition: background-color 0.3s; /* تأثير انتقال عند تغيير اللون */
-        }
-        button:hover {
-            background-color: #0056b3; /* لون خلفية الأزرار عند المرور عليها */
-        }
-    </style>
 </head>
 <body>
-    <h1>Attendance Tracker</h1>
-    <div class="buttons">
-        <button onclick="logAction('Check In')">🏢 Check In</button>
-        <button onclick="logAction('Break')">☕ Break</button>
-        <button onclick="logAction('Prayer')">🙏 Prayer</button>
-        <button onclick="logAction('Meeting')">📅 Meeting</button>
-        <button onclick="logAction('Check Out')">🏠 Check Out</button>
-    </div>
-    <h2>Log</h2>
-    <ul id="logList"></ul>
-
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="return login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="submit">Login</button>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
