@@ -4,6 +4,15 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+form label, form input {
+    display: block;
+    margin: 5px 0;
+}
 .buttons button {
     margin: 5px;
     padding: 10px 20px;
